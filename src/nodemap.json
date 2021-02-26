@@ -1,0 +1,86 @@
+
+	{
+	"node1": {
+		"label": "Contact Info",
+		"value": 100,
+		"type": "BASIC",
+		"adjList": ["node2", "nodeA"]
+	},
+	"node2": {
+		"label": "NemID",
+		"value": 95,
+		"type": "SERVICE",
+		"adjList": ["node3", "nodeBranch2"]
+	},
+	"node3": {
+		"label": "Personal Address",
+		"value": 95,
+		"type": "BASIC",
+		"adjList": []
+	},
+	"nodeBranch2":  {
+		"label": "Branch second",
+		"value": 55,
+		"type": "SERVICE",
+		"adjList": ["nodeBranch2A", "nodeBranch3"]
+		
+	},
+	"nodeBranch2A":  {
+		"label": "NodeBranch 2A",
+		"value": 25,
+		"type": "BASIC",
+		"adjList": ["nodeBranch2ALeft", "nodeBranch2ARight"]
+		
+	},
+	"nodeBranch2ALeft":  {
+		"label": "nodeBranch2ALeft",
+		"value": 25,
+		"type": "SERVICE",
+		"adjList": []
+		
+	},
+	"nodeBranch2ARight":  {
+		"label": "nodeBranch2ARight",
+		"value": 25,
+		"type": "BASIC",
+		"adjList": []
+		
+	},
+	"nodeBranch3":  {
+		"label": "NodeBranch 3",
+		"value": 25,
+		"type": "BASIC",
+		"adjList": []
+		
+	},
+	"nodeA": {
+		"label": "NodeA",
+		"value": 95,
+		"type": "SERVICE",
+		"adjList": ["nodeA2", "nodeA3"]
+	},
+	"nodeA2": {
+		"label": "Node A2",
+		"value": 100,
+		"type": "BASIC",
+		"adjList": []
+	},
+	"nodeA3": {
+		"label": "Node A3",
+		"value": 100,
+		"type": "SERVICE",
+		"adjList": ["nodeA4", "nodeA5"]
+	},
+	"nodeA4": {
+		"label": "Node A4",
+		"value": 100,
+		"type": "BASIC",
+		"adjList": []
+	},
+	"nodeA5": {
+		"label": "Node A5",
+		"value": 100,
+		"type": "SERVICE",
+		"adjList": []
+	}
+}
